@@ -1,0 +1,20 @@
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
+.user-Menu,
+.nav-links-list {
+  display: flex;
+}
+.nav-links-list a {
+  padding: 67px 14px 8px;
+}
+.nav-links-list li:not(:last-child) {
+  margin-right: 20px;
+}
+.nav-links-list a:hover,
+.nav-links-list a:focus {
+  background-color: #a3c1ef;
+  color: #ffffff;
+}
