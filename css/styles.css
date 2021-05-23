@@ -1,12 +1,17 @@
 body {
-  font-family: Catamaran, sans-serif
+  font-family: Catamaran, sans-serif;
+  font-weight: 400px;
+  font-size: 25px;
+  line-height: 150.6%;
+  letter-spacing: 0.03em;
   color: #153461;
 }
+
 .container {
   width: 1920px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
+
 .user-menu,
 .nav-links-list,
 .header-navigation {
@@ -44,6 +49,7 @@ body {
 .nav-links-list a:focus {
   background-color: #a3c1ef;
   color: #ffffff;
+  border-radius: 5px;
 }
 
 .user-menu-item:not(:last-child) {
@@ -55,11 +61,92 @@ body {
 }
 
 .appointment {
-  width: 188px;
-  height: 76px;
+  padding: 23px 33px;
+  font-weight: 700px;
+  font-size: 20px;
   color: #ffffff;
   background: #99baed;
   border: none;
   border-radius: 20px;
   text-align: center;
+}
+
+.hero-title {
+  font-weight: 700px;
+  font-size: 75px;
+  line-height: 133.6%;
+  letter-spacing: 0;
+  margin-bottom: 29px;
+}
+
+.headding-accent {
+  color: #FBB400;
+}
+
+.hero>.container {
+  background-image: url(../images/img-about.jpg);
+  /* width: 1234px;
+  height: 821px; */
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: center;
+  padding-top: 161px;
+  padding-bottom: 138px;
+  padding-left: 188px;
+  padding-right: 1156px;
+}
+
+.hero-text {
+  margin-bottom: 97px;
+}
+
+.section-title {
+  font-weight: 700px;
+  font-size: 70px;
+  line-height: 1.506;
+  margin-bottom: 80px;
+  color: #163561;
+}
+
+.our-history>.container {
+  background: 
+  url(../images/top-left-corner.svg) left top,
+  url(../images/top-right-corner.svg) right top,
+  url(../images/img-history.jpg) left center;
+ 
+  background-repeat: no-repeat;
+  
+  padding-top: 288px;
+  padding-left: 1199px;
+  padding-right: 195px;
+  padding-bottom: 334px;
+}
+
+.history-text li:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.history-text {
+  margin-bottom: 108px;
+}
+
+.services {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+}
+
+.icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 126px;
+  margin-bottom: 59px;
+  background: #E5ECFE;
+  border-radius: 13px;
+  box-shadow: 0px 1px 0px #008FDD;
 }
