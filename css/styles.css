@@ -78,10 +78,14 @@ body {
   font-weight: 700px;
   font-size: 20px;
   color: var(--white);
-  background: var(--hover-bgc);
+  background: var(--hover-color);
   border: none;
   border-radius: 20px;
   text-align: center;
+  cursor: pointer;
+
+  box-shadow: 0px 15px 50px rgba(153, 186, 237, 0.5);
+  
 }
 
 /* ==========Hero section========== */
@@ -148,6 +152,15 @@ body {
 
 /* ============Services section=========== */
 
+.our-services>.container {
+  padding-bottom: 272px;
+
+  background: url(../images/bottom-left-corner.svg) bottom left,
+  url(../images/bottom-right-corner.svg) bottom right;
+
+  background-repeat: no-repeat;
+}
+
 .services {
   text-align: center;
 }
@@ -192,6 +205,8 @@ body {
 .services-list-item:focus {
   background-color: var(--hover-color);
   color: var(--white);
+
+  box-shadow: 23px 39px 94px #D5E5FF;;
 }
 
 .services-card-title {
@@ -202,10 +217,9 @@ body {
   color: var(--title-color);
 }
 
-/* .services-card-title:hover .services-list-item:hover
-.services-card-title:focus {
-  color: inherit;
-} */
+.services-list-item:hover>.services-card-title {
+  color: var(--white);
+} 
 
 .services-item-discription {
   text-align: center;
