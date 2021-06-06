@@ -223,6 +223,33 @@ body {
 }
 
 /* ============Gallery section=========== */
+.our-gallery>.container {
+  padding: 0 270px;
+}
+
 .gallery {
   text-align: center;
 }
+
+.gallery-image-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -37px;
+  margin-bottom: -37px;
+}
+
+.gallery-image {
+  display: block;  
+}
+
+.gallery-image-item {
+  margin-right: 37px;
+  margin-bottom: 37px;
+   background-image: 
+  linear-gradient(to right,
+   rgba(82, 150, 255, 0.35),
+   rgba(82, 150, 255, 0.35));
+}
+
