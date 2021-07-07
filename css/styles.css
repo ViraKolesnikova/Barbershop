@@ -167,6 +167,27 @@ body {
   justify-content: center;
 }
 
+.services-list-item.active-anim {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.services-list-item.active-anim:nth-child(2) {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.services-list-item.active-anim:nth-child(3) {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+}
+
 .icon-bg {
   display: flex;
   justify-content: center;
@@ -188,6 +209,9 @@ body {
   padding-right: 41px;
   padding-left: 41px;
   width: 441px;
+  transform: translate(600px, 0px);
+  opacity: 0;
+  overflow: hidden;
 
   background: var(--services-card-bgc);
   box-shadow: 0px 5px 0px #99baed;
