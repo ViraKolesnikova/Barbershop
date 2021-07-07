@@ -7,6 +7,7 @@
   --icon-bgc: #e5ecfe;
   --services-card-bgc: #fafbff;
   --hover-color: #99baed;
+  --social-icon-bgc: #D3E5FF;
 }
 
 body {
@@ -71,11 +72,12 @@ body {
 .icon {
   background: var(--white);
   border: none;
+  cursor: pointer;
 }
 
-.appointment {
+.button {
   padding: 23px 33px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 20px;
   color: var(--white);
   background: var(--hover-color);
@@ -85,6 +87,11 @@ body {
   cursor: pointer;
 
   box-shadow: 0px 15px 50px rgba(153, 186, 237, 0.5);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--hover-nav-bgc);
 }
 
 /* ==========Hero section========== */
@@ -288,3 +295,82 @@ body {
 
   background-image: linear-gradient(to right, rgba(82, 150, 255, 0.35), rgba(82, 150, 255, 0.35));
 }
+
+.button-margin {
+  display: block;
+  padding: 22px 56px;
+  margin-top: 77px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============Footer=========== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 171px;
+  padding-bottom: 98px;
+
+  background: url(../images/footer-left-bottom.svg) right bottom,
+  url(../images/gallery-right-top.svg) left bottom;
+  background-repeat: no-repeat;
+}
+
+.logo-footer {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 46px;
+}
+
+.logo-text-footer {
+  margin-left: -50px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-bottom: 47px;
+
+  opacity: 0.65;
+}
+
+.social-links-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 47px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  color: var(--white);
+  background-color: var(--social-icon-bgc);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--hover-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+.underline {
+  display: block;
+  width: 1362px;
+  border-bottom: 1px solid var(--hover-color);
+}
+
+
+
+
+
