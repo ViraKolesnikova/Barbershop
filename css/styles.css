@@ -7,7 +7,7 @@
   --icon-bgc: #e5ecfe;
   --services-card-bgc: #fafbff;
   --hover-color: #99baed;
-  --social-icon-bgc: #D3E5FF;
+  --social-icon-bgc: #d3e5ff;
 }
 
 body {
@@ -69,10 +69,18 @@ body {
 .user-menu-item:not(:last-child) {
   margin-right: 72px;
 }
+
+.user-menu-item:hover .icon,
+.user-menu-item:focus .icon {
+  transform: scale(1.3);
+}
+
 .icon {
   background: var(--white);
   border: none;
   cursor: pointer;
+
+  transition: transform 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .button {
@@ -87,11 +95,13 @@ body {
   cursor: pointer;
 
   box-shadow: 0px 15px 50px rgba(153, 186, 237, 0.5);
+  transition: transform 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--hover-nav-bgc);
+  transform: scale(1.3);
 }
 
 /* ==========Hero section========== */
@@ -172,27 +182,28 @@ body {
 .services-list {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .services-list-item.active-anim {
   transform: translate(0, 0);
   opacity: 1;
   transition: opacity 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .services-list-item.active-anim:nth-child(2) {
   transform: translate(0, 0);
   opacity: 1;
   transition: opacity 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
-  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
 .services-list-item.active-anim:nth-child(3) {
   transform: translate(0, 0);
   opacity: 1;
   transition: opacity 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
-  transition: transform 350ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
 }
 
 .icon-bg {
@@ -216,9 +227,8 @@ body {
   padding-right: 41px;
   padding-left: 41px;
   width: 441px;
-  transform: translate(600px, 0px);
+  transform: translate(0px, 600px);
   opacity: 0;
-  overflow: hidden;
 
   background: var(--services-card-bgc);
   box-shadow: 0px 5px 0px #99baed;
@@ -313,7 +323,7 @@ body {
   padding-bottom: 98px;
 
   background: url(../images/footer-left-bottom.svg) right bottom,
-  url(../images/gallery-right-top.svg) left bottom;
+    url(../images/gallery-right-top.svg) left bottom;
   background-repeat: no-repeat;
 }
 
@@ -369,8 +379,3 @@ body {
   width: 1362px;
   border-bottom: 1px solid var(--hover-color);
 }
-
-
-
-
-
